@@ -1,0 +1,104 @@
+﻿<!-- 文本内容开始  -->
+
+	<p style="text-indent: 2em;">感染是人工关节置换术后最严重的并发症之一，不仅给患者带来多重的手术打击，而且耗费了巨大的医疗资源。根据既往报道全膝关节置换术(TKA)后感染的发生率为0.5%-5%[1-7]；而全髋关节置换术(THA)后感染的发生率为0.6%-16%[8-13]。</p>
+	<p style="text-indent: 2em;">近10年来，由于手术环境的改善和抗生素的更新，使得人工关节置换术后感染率明显下降[14]。目前接受人工关节置换术的患者的增长率已远远大于感染率下降的速度，故术后感染的患者人群已不容忽视。早期准确的诊断关节感染尤为重要，它能够指导外科医生及时处理感染，同时选择恰当的治疗方式，可有效地增加感染的根除率。</p>
+	<h5 style="text-indent: 2em;">1危险因素</h5>
+	<ul>
+	<li>手术环境手术室的垂直层流控制、防渗漏的手术单及手术衣可有效降低术后感染的发生率。Blom AW等人对未使用这些设施的471例初次TKA、23例翻修TKA和使用这些设施的931例初次TKA、69例翻修TKA作对照研究发现，前者初次TKA感染率为4.4%、翻修TKA为15%；而后者初次TKA感染率为1%、翻修TKA为5.8%[14]。Salvati等人研究发现未使用垂直层流手术室及exhaust suits，仅使用水平层流手术室时，早期感染率为3.9%，而使用垂直层流手术室及exhaust suits后感染发生率明显下降[16]。Peersman G等人采用垂直层流手术室及exhoust suits共完成了6489例TKA，术后早期感染率仅为0.43%[17]。</li>
+	<li>自身条件患者有如下合并症时易出现术后感染：(1)风湿性关节炎[3、4]；(2)自身免疫力低下[5、17、18]；(3)糖尿病[19]；(4)营养状况差[17]；(5)肥胖[17]；(6)既往开放性手术史[4、18、20、38]；(7)其他部位感染灶[1]。有研究表明，合并症的数量与翻修术后感染的发生率呈正相关[17]。所以术前应详细询问病史，评估患者的全身状况，估计术后感染的发生率，选择恰当根治感染的手术方式。Peersman G报道113例感染中13例(11.5%)为翻修术后感染，而按1：2配对的226例对照组中仅5例(2.12%)为翻修术后感染[17]。Hart WJ等人认为关节感染之前经历的手术次数越多，感染越难根治[21]。</li>
+	<li>手术时间手术时间无疑是任何开放性手术术后感染的一个重要影响因素。手术时间越长，手术器械、假体及伤口与空气中微生物的接触时间越长，越容易造成感染。假设T为某一类手术时间的第75百分位数，如果一台手术时间超过了T小时，则可认为该次手术时间明显延长[22]。Peerman G研究显示6373例未感染TKA中仅5% >2.5小时，而116例感染TKA中有25% >2.5小时；感染的初次TKA平均手术时间为120分钟、未感染的初次TKA平均93分钟，感染的翻修TKA平均手术时间为160分钟、未感染的翻修TKA平均96分钟[17]。</li>
+	</ul>
+	<div id="doctor_toggle_1" style="display:none;">
+	<h5 style="text-indent: 2em;">2 诊断</h5>
+	<ul>
+	<li>术前诊断</li>
+	<ul>
+	<li>血液学检查方法血液学检查方法主要有白细胞计数加分类、C反应蛋白(CRP)及血沉(ESR)。该类方法的优点是简便易行、能迅速得出结果且检查费用低廉。外周血白细胞数量一般在4-10E9，如果>10E9，考虑存在感染。但白细胞计数受诸多因素的影响，比如患者自身条件、服用药物、炎症部位及范围等，而且常有存在感染而白细胞计数不升高的情况。如果患者存在类风湿性关节炎或其他结缔组织疾病时，CRP和ESR对关节感染诊断的敏感性也会大大降低[23、24]。通过询问病史及仔细查体，大多能够明确患者有无类风湿性关节炎、结缔组织病等既往病史，排除这些干扰因素后，白细胞诊断感染的敏感性、特异性、阳性预测值及阴性预测值分别为0.20、0.96、0.54及0.85；CRP分别为0.96、0.92、0.74及0.99；ESR为0.82、0.85、0.58及0.95[25]。且CRP比ESR变化快，一般无菌手术术后第二天CRP即到达峰值，此后如果CRP值不下降反而升高，在除外类风湿性关节炎等炎症性疾病后，应考虑术后感染的可能[26、27]。</li>
+	<li>关节穿刺关节穿刺术曾被人称作为明确关节感染的标准检查方法[28]。诊断关节感染的敏感性为45%-100%[29-31]。关节穿刺术敏感性变异如此之大，与抗生素的使用休戚相关。Barrack等人的一项研究显示，对69例有症状的TKA行关节穿刺术，总体的敏感性、特异性、阳性预测值及阴性预测值分别为0.55、0.959、0.846及0.839；若除去2例(67例)停用抗生素不够2周的患者，统计结果分别为0.611、0.959、0.846及0.87；若除去16例(53例)曾服用过抗生素的患者，统计结果分别为0.75、0.959、0.75及0.955。如果初次穿刺结果与临床表现不符，可重复穿刺，Barrack对8例可疑患者重复穿刺，诊断的敏感性、特异性、阳性预测值及阴性预测值可提升为0.833、0.959、0.882及0.94[31]。Spangehl等人对180例患者初次穿刺的敏感性、特异性、阳性预测值及阴性预测值分别为0.86、0.94、0.67及0.98；重复穿刺后为0.81、0.97、0.77及0.97[25]。通过比较此两项研究（表1），重复穿刺较初次穿刺可有效提高敏感性及阳性预测值。Spangehl的研究中，之所以重复穿刺的敏感性较初次穿刺低，是因为该样本未排除抗生素的干扰。对于穿刺前有抗生素服用史的患者重复穿刺仍不能反映真实情况，反而增加了穿刺次数，故敏感性降低。</li>
+	</ul>
+	<li>术中诊断</li>
+	<ul>
+	<li>滑膜液白细胞计数手术暴露滑膜囊后，以针吸穿刺，取足够量的滑膜液送检，进行白细胞计数及分类。研究认为白细胞计数>50E9或中性粒细胞>80%考虑关节感染[32-34]。Spangehl对183例行滑膜囊穿刺后，白细胞计数的敏感性、特异性、阳性预测值及阴性预测值分别为0.36、0.99、0.91及0.90；中性粒细胞分类为0.89、0.85、0.52及0.98[25]。但对于关节液较少或者伤口引流较多的患者，将无法收集到足够的滑膜液进行此项检查。</li>
+	<li>冰冻切片术中冰冻切片是快速病理诊断的一种方式。术中取外观类似感染的组织送冰冻病理检查，当每高倍视野下>=5个中性粒细胞时，考虑细菌感染[41]。Hart等人对48例TKA进行随访发现33例术中冰冻阴性的患者4例感染复发(12.12%)，14例冰冻可疑阳性的患者2例复发(14.29%)，其阳性预测值仅为0.38，阴性预测值为0.88[38]。Spangehl等人对202例TKA进行术中冰冻病理检查，发现该检查方法对感染的敏感性、特异性、阳性预测值及阴性预测值分别为0.80、0.94、0.74及0.96[25]。</li>
+	<li>格兰染色格兰染色法是丹麦细菌学家Christian Gram在1884年创建的细菌鉴别染色法，是鉴定细菌最基本的方法。有助于确定感染及对感染细菌的判断。术中操作时尽量取一些外观类似感染的组织，送检进行格兰染色。但以往研究皆表明独立使用该方法确定关节感染的敏感性极低，平均约0.1[31、35、36]。故目前手术中不用格兰染色诊断感染，而用于辅助已经确诊的病例进一步明确细菌的形态及种类，帮助指导术后抗生素的应用[37]。</li>
+	<li>术中培养如何取材直接影响培养结果。一般于术中取3处炎症最重的组织进行培养，当>=2处组织培养出同一病原时考虑细菌感染，否则认为污染。Powles等人对5例含庆大霉素骨水泥行THA行翻修术，术中在敲碎水泥前后分别取材送培养，结果显示水泥碎裂后局部庆大霉素浓度骤增，可迅速杀灭细菌，故应在敲碎骨水泥前取材做细菌培养，以免增加假阴性率[39]。Neut对22例关节感染行翻修术的患者进行术中取材，发现普通取软组织培养，阳性率为41%，延长培养时间阳性率为64%，如果对从陈旧假体上的刮取物进行培养，阳性率可高达86%[40]，由此他引入了一种新设备(Confocal Laser Scanning Microscopy)。该设备能够在术前扫描患者假体上的菌落，看到细菌被膜(Biofilm)，从而为确诊感染提供了一个新方法。只是该设备价格昂贵(约为$350,000)，临床推广仍需要一段时间。</li>
+	</ul>
+	<li>标准</li>
+	<ul>
+	<li>感染诊断血液学检查易受身体其他诸多因素影响；关节穿刺术需严格控制抗生素的使用，有时盲目获取客观的结果有可能使患者感染扩散；取滑膜液进行实验室检查不适合关节液较少或伤口引流多的患者；冰冻切片的阳性预测值亦未达到判断感染的指标；格兰染色由于极低的敏感性不足以独立依靠之诊断关节感染；术中培养受患者、取材时间位置及污染等情况的制约。因此正确诊断关节感染不可能依靠单一的辅助检查结果，需要根据不同的患者的病史查体，制定检查方案，综合各项结果最终诊断关节感染。Spangehl等人对上述检查方法进行排列组合，统计感染的可能性，并结合患者的病史查体，提出了诊断标准（表2）。表2. 成人关节置换术后感染的诊断标准符合以下一项即可诊断关节感染： (1)开放的伤口或窦道与关节相通； (2)全身感染合并髋关节疼痛，且关节液呈脓性； (3)5项辅助检查结果中至少符合3项[25] (i)ESR>30mm/Hour[31]； (ii)CRP>10mg/L； (iii)术前关节穿刺至少一次阳性； (iv)冰冻结果>5个多核白细胞/高倍视野； (v)术中培养>1/3的培养结果阳性。</li>
+	<li>感染分型明确感染的诊断后还应进一步对其分型，这有助于选择恰当的治疗策略，根除感染，重获无痛、稳定、功能良好的人工关节。目前以Segawa感染分型最为权威（表3）。表3：感染的分型及标准[15] 1型 2型 3型 4型名称术中培养阳性(PIOC) 早期术后感染(EPOI) 急性血源性感染晚期慢性感染标准>=2处标本术中培养结果阳性感染发生在术后4周内在既往功能良好人工关节的基础上发生的血源播散性感染慢性、临床表现不显著的感染；感染持续4周以上</li>
+	</ul>
+	</ul>
+	<h5 style="text-indent: 2em;">3治疗方法</h5>
+	<ul> 
+	<li>抗生素治疗由于单独应用抗生素治疗关节感染的成功率较低[3、11]，故只适用于3种情况：(1)全身状况极差不足以耐受手术者；(2)浅表伤口感染，感染未累计关节；(3)PIOC[12]。治疗其他感染类型的患者则需要外科干预。关节间隔物(Spacer)置入术后，推荐敏感抗生素使用的疗程为6周[71-73]。关节感染最常见的病原是金黄色葡萄球菌，是最常见的格兰染色阳性的葡萄球菌，一旦确诊为金黄色葡萄球菌感染，紧接着需要明确的是对甲氧西林的敏感性。对甲氧西林敏感的可选择抗球菌的青霉素或一代头孢菌素，而甲氧西林抵抗的金黄色葡萄球菌(Methicillin-resistant Staphylococcus aureus, MRSA)大都对含β内酰胺环的抗生素抵抗，但对万古霉素敏感，所以万古霉素成为治疗MRSA的一线用药。对于3型关节感染，细菌的种类是由原发灶的部位及程度所决定的，因此常常合并多种细菌感染，种类也较广泛[75]。包括金黄色葡萄球菌、β溶血性链球菌、肠球菌及其他一些格兰阴性的细菌。术前须进行多种培养，针对不同类细菌联合用药。</li>
+	<li>外科治疗</li>
+		<ul>
+			<li>保留假体保留假体的外科治疗方法包括开放式清创术和关节镜下清创术。清创术具有创伤小、住院时间短、医疗费用低等优点。该方法主要适用于治疗EPOI及急性血源性感染[15]。Bengtson对154例感染TKA进行清创，30例(19%)成功[3]；Hanssen对445例关节感染的患者清创，140例(31.5%)成功[11]。成功率之所以不高，是因为他们的样本大部分含4型感染。另外，不同的病原种类会影响感染的根除率。Deirmengian等人挑选3型感染TKA31例，9例为翻修术后感染，其中2例为铰链膝。分为金黄色葡萄球菌感染和其它格兰阳性菌感染两组研究，发现前组感染者保留假体清创的成功率仅为8%，而后组成功率达56%[42]，设想如果该研究排除9例具有危险因素的感染翻修TKA，那将会进一步提升清创术治疗感染的成功率。Kilgus等人对35例感染THA和35例感染TKA 进行病原学研究，把THA和TKA再分为甲氧西林敏感和甲氧西林抵抗两个亚组，统计术后效果，由于关节切除、关节融合及截肢术由于损失了关节功能，故Kilgus把保留假体和更换假体定义为成功手术。甲氧西林抵抗共35例，成功率为34%；而甲氧西林敏感组34例，成功率达85%；另1例TKA为真菌感染，接受了截肢术[74]。Dixon等人回顾性研究15例感染的TKA，关节镜清创治疗感染成功率为60%，并且提出关节镜下清创术更适合于骨水泥型假体的观点[43]。因此，在广泛使用二期置换手术治疗关节感染的今天，采用保留假体的清创术并非一无是处，外科医生应仔细斟酌患者的适应症，发挥该手术独特的优点。具体应考虑如下几方面：(1)年龄[42]；(2)危险因素；(3)感染类型；(4)病原种类；(5)假体状态。</li>
+			<li>更换假体更换假体的治疗方法有直接置换和二期置换术。该类手术主要针对治疗4型关节感染。</li>
+				<ul>
+					<li>直接置换术直接置换相比二期置换术具有手术次数少、住院时间短等优点，但如果不严格把握适应症，该手术成功率仅为58%[11]。实施手术前后应遵循以下原则[44]：(1)抗生素敏感的格兰阳性菌感染；(2)无窦道形成；(3)对所有感染组织清创；(4)用含抗生素骨水泥固定；(5)术后长期应用抗生素。Silva等调查直接置换术治疗关节感染的患者37例，33例成功(89%)；33例中有3例(9%)未使用含抗生素骨水泥，而失败的4例中有1例(25%)未使用[44]。Jackson对1299例感染的THA行直接置换术，99%使用了含抗生素骨水泥，成功根治感染1077例(83%)[45]。由于直接置换术的适应症较窄，且目前仅有少数研究对其进行成功的报道[16、29、46]，大量的关节感染患者仍需接受二期置换术。</li>
+					<li>二期置换术二期置换术治疗关节感染相比其他外科手段具有适应范围广(骨量充足、关节周围软组织丰富 [54])，根治感染率高等优点，近20年来颇受外科医生的青睐。再早期的二期置换术根治感染虽然满意，但在两次手术期间需要关节制动，且常常出现关节不稳、疼痛、瘢痕形成、伸膝装置挛缩及关节囊和韧带挛缩等情况，故为克服这些并发症给II期手术带来的困难，改善术后关节的功能，1987年由Borden和Gearen首次在二期置换术中使用固定型关节间隔物(Block/Static Spacer)，成功率为90%[47]。Booth、Wilde和Whiteside随后亦适用Block Spacer，成功率大约在90%以上[48-50]。然而使用Block Spacer仍未解决I-II期关节制动导致的关节僵直、活动度(Range Of Motion，ROM)差、II期手术暴露困难及患者满意度下降，且Block Spacer容易脱位导致严重骨缺损等问题[51]。于是活动型关节间隔物(Mobile/Articulating Spacer)应运而生[52、53]。Spacer的留置时间一般至少为3个月[21]。Meek等人对47例感染的TKA行二期置换术，采用Prostalac Spacer(Mobile Spacer)，平均随访41个月，感染复发率4%，ROM平均增加9°[71]。Emerson等人对比研究26例Block Spacer和22例Articulating Spacer，随访36个月，两组再感染率分别为9%、7.6%，无显著性差异；而改善术后活动度方面，Articulating比Block Spacer多14°，有显著性差异[53]。Hofmann也认为Articulating与Block Spacer在根治感染方面无显著性差异，改善活动度方面比Block Spacer多16°[54]。无论使用何种Spacer技术，都应用含抗生素的骨水泥(ALBC)固定，这能大大提高关节内抗生素浓度，增加感染的根除率[56]。常用的抗生素有妥布霉素[57]、庆大霉素[58]和万古霉素[55]；常用的骨水泥类型有Palacos、Simplex-P、CMW和Sulfix acrylic，而Palacos较其他三种骨水泥释放抗生素浓度更高、时间更长[59、60]。骨水泥释放抗生素的能力很大程度决定于骨水泥微孔，微孔越多、越大释放抗生素能力越强[61]，混入粉末状抗生素有利于创造骨水泥微孔，从而增加释放[62]。但抗生素与骨水泥的配比过大会导致骨水泥的机械承受力下降[63、64]。第71届AAOS年会上的一份报告显示，连续观察34例二期置换术患者，平均使用3.4盒(136g)Simplex骨水泥，总共含10.5g万古霉素和12.5g庆大霉素，通过监测血清肌酐浓度未发现肾功能损害的病例。在Hofmann的另一项研究中发现妥布霉素具有强效和广谱的抗菌性，加入到骨水泥中，术后第一天测得的血药浓度为治疗量，而术后第三天血药浓度几乎测不到，且无患者发生肾毒性[55]。以下为目前骨水泥中加入抗生素的推荐剂量：(1)骨水泥Spacer：1g万古霉素+3.6g妥布霉素[65]；(2)固定新假体：1g万古霉素+1.2g妥布霉素[63、64]。</li>
+				</ul>
+			<li>去除假体去除假体的手术包括关节切除术、关节融合术及截肢术。该类手术的共同点是虽然可有效的根除关节感染，却牺牲了部分或全部关节功能。一切保留或更换假体仍无法根除感染，且能耐受手术的患者皆为此类手术的适应症。Falahee等人对26例患者行关节切除术，其中11例为类风湿性关节炎，根除感染成功率为89%，功能方面只有15例能够独立行走，仅其中的5例(19%)膝关节稳定，无需任何辅助行走[66]。关节融合术曾经被人们认为是治疗关节感染的金标准，尽管关节融合术后给患者生活带来了不便，但从Oxford评分上来看，融合术与二期置换术效果无显著差异[14]。融合术虽可有效的根除感染，但对感染未得到控制的患者行关节融合术，成功率仅为19%[67]。铰链膝或髓内有假体的TKA术后感染常常合并明显的骨缺损，这样的患者融合术后更易出现不愈合[67、69]。对此，Oostenbroek等人对15例患者进行骨缺损分型，采用Ilizarov方法行关节融合术，愈合率达93%，并发症率较高80%，感染无复发；8例并发症中有3例为其他内科疾病，3例出现针道感染的骨髓炎，1例拆除支架时骨折，1例不愈合，2例支架松动[68]。截肢术是经过尝试各种外科手段皆不能根除感染，或合并威胁生命的败血症患者最终的解决方案。大约有不到5%的感染患者最终需要接受截肢术[11]。截肢术最常见的原因是既往反复的外科操作造成的大量骨缺损及顽固性疼痛[70]。所以外科医生术前应仔细评估根除感染的可能性，而不要盲目反复手术，避免不必要的截肢术。 4 总结通过询问病史，查体及辅助检查结果做出及时准确地诊断是成功治疗所有的关节感染的前提。根除感染，恢复无痛、功能良好的人工关节是治疗关节感染的基本原则。抗生素治疗关节感染虽然简单、廉价，但根除关节感染大都需要联合外科手段，而选择外科治疗方式关键要考虑假体的去留问题，这也是处理关节感染的核心环节。目前联合应用抗生素、清创术及关节置换术已成为治疗大部分复杂关节感染的一套完整程序，还需不断补充及完善。</li>
+	</ul>
+	</ul>
+	<h5 style="text-indent: 2em;">参考文献：</h5>
+		<ul style="list-style:none;">
+			<li>1、Poss R, Thornhill TS, Ewald FC, et al. Factors influencing the incidence and outcome of infection following total joint arthroplasty. ClinOrthop 1984;182:117-26. </li>
+			<li>2、Grogan TJ, Dorey F, Rollins J, Amstutz HC. Deep sepsis following total knee arthroplasty. J Bone Joint Surg [Am] 1986;68-A:226-34. </li>
+			<li>3、Bengtson S, Knutson K. The infected knee arthroplasty: a 6-year follow-up of 357 cases. ActaOrthopScand 1991;62:301-11.</li>
+			<li>4、 Johnson DP, Bannister GC. The outcome of infected arthroplasty of the knee. J Bone Joint Surg [Br] 1986;68-B:289-91.</li>
+			<li>5、Gristina AG, Kolkin J. Total joint replacement and sepsis. J Bone Joint Surg [Am] 1983;65-A:128-34. </li>
+			<li>6、Insall JN, Thompson FM, Brause BD. Two-stage reimplantation for the salvage of infected total knee arthroplasty. J Bone Joint Surg [Am] 1983;65-A:1087-98.</li>	
+			<li>7、 Rand JA, Bryan RS, Morrey BF, Westholm F. Management of infected total knee arthroplasty. ClinOrthop 1986;205:75-85. </li>
+			<li>8、Cuckler JM, Star AM, Alavi A, Noto RB. Diagnosis and management of the infected total joint arthroplasty. OrthopClin North Am 1991;22:523-30.</li>
+			<li>9、 Fitzgerald Jr RH. Infections of hip prostheses and artificial joints. Infect Dis Clin North Am 1989;3:329-38.</li>
+			<li>10、 Garvin KL, Hanssen AD. Current concepts review: Infection after total hip arthroplasty. J Bone Joint Surg [Am] 1995;77-A:1576-88.</li>
+			<li>11、Hanssen AD, Rand JA. Evaluation and treatment of infection at the site of a total hip or knee arthroplasty. Instr Course Lect 1999;48:111-22. </li>
+			<li>12、Tsukayama DT, Estrada R, Gustilo RB. Infection after total hip arthroplasty: A study of the treatment of one hundred and six infections. J Bone Joint Surg [Am] 1996;78-A:512-23. </li>
+			<li>13、 Younger ASE, Duncan CP, Masri BA, McGraw RW. The outcome of two-stage arthroplasty using a custommade interval spacer to treat the infected hip. J Arthroplasty1997;12:615-23.</li>
+			<li>14、Blom AW, Brown J, Taylor AH, et al. Infection after total knee arthroplasty. J Bone Joint Surg [Br] 2004;86-B:688-91.</li>
+			<li>15、Segawa H, Tsukayama DT, Kyle RF, Becker DA, Gustilo RB. Infection after total knee arthroplasty. A retrospective study of the treatment of eighty-one infections. J Bone Joint Surg [Am] 1999;81-A:1434-45. </li>
+			<li>16、Salvati EA, Robinson RP, Zeno SM, et al. Infection rates after 3175 total hip and total knee replacements performed with and without a horizontal unidirectional filtered air-flow system. J Bone Joint Surg [Am] 1982;64-A:525-35.</li>
+			<li>17、Peersman G, Laskin R, Davis J, et al. Infection in total knee replacement: A retrospective review of 6489 total knee replacements. ClinOrthop 2001;392:15-23. </li>
+			<li>18、Salvati EA, Insall IN. The management of sepsis in total knee replacement. In: Savastano AA, ed. Total knee replacement. New York: Appleton Century Crofts. 1989:49-58. </li>
+			<li>19、 England SP, Stern SH, Insall JN, Windsor RE. Total knee arthroplasty in diabetes mellitus. ClinOrthop 1990;260:130-4.</li>
+			<li>20、 Petty W, Bryan RS, Covertry MB, Peterson LFA. Infection after total knee arthroplasty. ClinOrthop North Am 1975;6:1005-14. </li>
+			<li>21、 Hart WJ, Jones RS. Two-stage revision of infected total knee replacements using articulating cement spacers and shout-term antibiotic therapy. J Bone Joint Surg [Br] 2006;88-B:1011-5. </li>
+			<li>22、Mangran AJ, Horan TC, Pearlson ML, et al: Guideline for prevention of surgical site infection 1999. Infect Control HospEpidemiol 1999;20:247-78. </li>
+			<li>23、Eftekhar NS. Postoperative wound infection. In Total Hip Arthroplasty. 1993;2:1457-504. St. Louis, C. V. Mosby. </li>
+			<li>24、 Shih, L-Y, Wu J-J, Yang D-J. Erythrocyte sedimentation rate and C-reactive protein values in patients with total hip arthroplasty. ClinOrthop 1987;225:238-46. </li>
+			<li>25、Spangehl MJ, Masri BA, Oconnell JX, Duncan CP, et al. Prospective analysis of preoperative and intraoperative investigations for the diagnosis of infection at the sites of two hundred and two revision total hip arthroplasties. J Bone Joint Surg [Am] 1999;81-A:672-83. </li>
+			<li>26、Moreschini O, Greggi G, Giordano MC, Nocente M, Margheritini F. Postoperative physiopathological analysis of inflammatory parameters in patients undergoing hip or knee arthroplasty. Int J Tissue React 2001;23:151-4.</li>
+			<li>27、 White J, Kelly M, Dunsmuir R. C-reactive protein level after total hip and total knee replacement. J Bone Joint Surg [Br] 1998;80:909-11.</li>
+			<li>28、 Windsor RE, Insall JN. Management of the infected total knee arthroplasty. Ed2. New York, Churchill Livingstone 959-974, 1993. </li>
+			<li>29、Morrey BF, Westholm F, Schoifet S, et al. Long-term results of various treatment options for infected total knee arthroplasty. ClinOrthop 1989;248:120-8.</li>
+			<li>30、 Duff GP, Lachiewiez PF, Kelley SS. Aspiration of the knee joint before revision arthroplasty. ClinOrthop 1996;331:132-9. </li>
+			<li>31、 Barrack RL, Jennings RW, Wolfe MW, Bertot AJ. The value of preoperative aspiration before total knee revision. ClinOrthop 1997;345:8-16. </li>
+			<li>32、Kortekangas P, Aro HT, Tuominen J, Toivanen A. Synovial fluid leukocytosis in bacterial arthritis vs. reactive arthritis and rheumatoid arthritis in the adult knee. Scandinavian J Rheumatol 1992;21:283-8. </li>
+			<li>33、Krey PR, Bailen DA. Synovial fluid leukocytosis. A study of extremes. Am J Med 1979;67:436-42. </li>
+			<li>34、 McCarty DJ. Synovial fluid. In arthritis and allied conditions, edited by W. J. Koopman. Ed. 13, pp. 81-102. Baltimore. Williams and Wilkins, 1997. </li>
+			<li>35、Chimento GF, Finger S, Barrack L. Gram stain detection of infection during revision arthroplasty. J Bone Joint Surg [Br] 1996;78-B:838. </li>
+			<li>36、Scher DM, Di Cesare PE, Lonner JH, Zuckerman JD. The predictive value of intraoperative Gram stains in the diagnosis of infected total joint replacements at revision surgery. Presentation at the Annual Meeting of the American Academy of Orthopaedic Surgeons, San Francisco, 1997. </li>
+			<li>37、 Della Valle CJ, Scher DM, et al. The role of intraoperative gram stain in revision total joint arthroplasty. J Arthroplasty 1999;14:500-4. </li>
+			<li>38、 Hart WJ, Jones RS. Two-stage revision of infected total knee replacements using articulating cement spacers and short-term antibiotic therapy. J Bone Joint Surg [Br] 2006;88-B:1011-5. </li>
+			<li>39、Powles JW, Spencer RF, Lovering AM. Gentamicin release from old cement during revision hip arthroplasty. J Bone Joint Surg [Br] 1998;80-B:607-10. </li>
+			<li>40、Neut, et al. Detection of biomaterial-associated infections in orthopaedic joint implants. ClinOrthop 2003;413:261-8. </li>
+			<li>41、Mirra JM, Amstutz HC, Maos M, Gold R. The pathology of the joint tissues and its clinical relevance in prosthesis failure. ClinOrthop 1976;117:221-40. </li>
+			<li>42、Deirmengian C, Greenbaum J, Stern J, et al. Open Debridement of acute gram-positive infections after total knee arthroplasty. ClinOrthop 2003;416:129-34.</li>
+			<li>43、 Dixon P, Parish N, Cross J. Arthroscopic debridement in the treatment of the infected total knee replacement. J Bone Joint Surg [Br] 2004;86-B:39-42. </li>
+			<li>44、 Silva M, Tharani R, Schmalzried TP. Results of direct exchange or debridement of the infected total knee arthroplasty. ClinOrthop 2002;404:125-31.</li>
+			<li>45、 Jackson WO, Schmalzried TP. Limited role of direct exchange arthroplasty in the treatment of infected total hip replacements. ClinOrthop 2000;381:101-5. </li>
+			<li>46、Goksan SB, Freeman MA. One-stage reimplantation for infected total knee arthroplasty. J Bone Joint Surg [Br] 1992;74-B:78-82. </li>
+			<li>47、 Borden LS, Gearen PF. Infected total knee arthroplasty: A protocol for management. J Arthroplasty 1987;2:27-36. </li>
+			<li>48、 Booth Jr RE, Lotke PA. The results of spacer block technique in revision of infected total knee arthroplasty. ClinOrthop 1989;248:57-60.</li>
+			<li>49、 Wilde AH, Ruth JT. Two-stage reimplantation in infected total knee arthroplasty. ClinOrthop 1988;236:23-35. </li>
+			<li>50、 Whiteside LA. Treatment of infected total knee arthroplasty. ClinOrthop 1994;299:169-72. </li>
+			<li>51、Rorabeck CH. Session IV: Salvage of the infected total knee replacement: Infection: The problem. ClinOrthop 2002;404:113-5.</li>
+			
+															
+		</ul>
+		</div>
+		
+		<!-- 文本内容结束  -->

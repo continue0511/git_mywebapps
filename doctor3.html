@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en">
+<!--<![endif]-->
+	<head>
+		<meta charset="utf-8">
+		<title>Doctor3</title>
+		<meta name="description" content="shareView">
+		<meta name="author" content="htmlcoder.me">
+
+		<!-- Mobile Meta -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+		<!-- Favicon -->
+		<link rel="shortcut icon" href="images/favicon.ico">
+
+		<!-- Web Fonts -->
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700,300&amp;subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Raleway:700,400,300' rel='stylesheet' type='text/css'>
+
+		<!-- Bootstrap core CSS -->
+		<link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+
+		<!-- Font Awesome CSS -->
+		<link href="fonts/font-awesome/css/font-awesome.css" rel="stylesheet">
+
+		<!-- Plugins -->
+		<link href="css/animations.css" rel="stylesheet">
+
+		<!-- shareView core CSS file -->
+		<link href="css/style.css" rel="stylesheet">
+
+		<!-- Custom css --> 
+		<link href="css/custom.css" rel="stylesheet">
+		
+		 <script type="text/javascript" src="plugins/jquery.min.js"></script>	
+		<script type="text/javascript">
+		$(document).ready(function(){
+		
+		var url=decodeURI(location.href);
+			$(document).attr('title',url.split('?')[1]);
+		
+		
+			//检查设备 跳转链接开始   
+			$("button").click(function(){
+			//  alert("hello");
+			  var browser = {
+			   versions: function () {
+				var u = navigator.userAgent, app = navigator.appVersion;
+				return {//移动终端浏览器版本信息
+				 trident: u.indexOf('Trident') > -1, //IE内核
+				 presto: u.indexOf('Presto') > -1, //opera内核
+				 webKit: u.indexOf('AppleWebKit') > -1, //苹果、谷歌内核
+				 gecko: u.indexOf('Gecko') > -1 && u.indexOf('KHTML') == -1, //火狐内核
+				 mobile: !!u.match(/AppleWebKit.*Mobile/i) || !!u.match(/MIDP|SymbianOS|NOKIA|SAMSUNG|LG|NEC|TCL|Alcatel|BIRD|DBTEL|Dopod|PHILIPS|HAIER|LENOVO|MOT-|Nokia|SonyEricsson|SIE-|Amoi|ZTE/), //是否为移动终端
+				 ios: !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/), //ios终端
+				 android: u.indexOf('Android') > -1 || u.indexOf('Linux') > -1, //android终端或者uc浏览器
+				 iPhone: u.indexOf('iPhone') > -1 || u.indexOf('Mac') > -1, //是否为iPhone或者QQHD浏览器
+				 iPad: u.indexOf('iPad') > -1, //是否iPad
+				 webApp: u.indexOf('Safari') == -1 //是否web应该程序，没有头部与底部
+				};
+			   } (),
+			   language: (navigator.browserLanguage || navigator.language).toLowerCase()
+			}
+			if (browser.versions.iPhone || browser.versions.iPad || browser.versions.ios) {
+			window.location.href = "https://itunes.apple.com/cn/app/e-xun-ming-jia/id1073506655?l=en&mt=8";
+			}
+			else if (browser.versions.android) {
+			window.location.href = "http://www.wandoujia.com/apps/com.exmj.patients";
+			}
+			else{
+			window.location.href = "http://www.wandoujia.com/apps/com.exmj.patients";
+			}
+			  }); 
+			//链接结束  
+			   
+		});
+		</script>
+
+		
+	</head>
+	
+	<body class="no-trans">
+	
+	
+     <!-- section start -->
+		<!-- ================ -->
+		<div class="section clearfix object-non-visible" data-animation-effect="fadeIn">
+			<div class="container">
+				<div class="row">
+				    <div class="col-md-12 object-non-visible"  data-animation-effect="fadeIn">
+								<img src="images/section-image-1.png" alt="">
+								<div class="space"></div>
+							</div>
+				
+					<div class="col-md-12 object-non-visible " data-animation-effect="fadeIn">
+						<h1 id="about" class="title text-center">畸形矫正-周一新 <span>名医团队</span></h1>
+						<p class="lead text-center"></p>
+						<div class="space"></div>
+						<div class="row">
+							
+							<div class="col-md-12 ">
+							    <h2>团队简介</h2>
+								<p>Our Mission. Vision. & Values</p>
+								<ul class="list-unstyled">
+									<li><i class="fa fa-caret-right pr-10 text-colored"></i><strong> 使命 Why we are here</br></strong><p style="text-indent:1em;">为成人关节疾病和下肢畸形患者提供：优质、安全、和高性价比的诊疗服务</p></li>
+									<li><i class="fa fa-caret-right pr-10 text-colored"></i><strong> 远景  Where we are headed</br></strong><p style="text-indent:1em;">致力于成人关节疾病诊疗及下肢畸形矫正领域的临床与实践、研究与创新、于此同时为病人提供深切的人文关怀，并在此领域内维持领导地位</p></li>
+									<li><i class="fa fa-caret-right pr-10 text-colored"></i><strong> 价值观  What you can expect</br></strong><p style="text-indent:1em;">尊重，诚信，职业素质，追求卓越，创新精神</p></li>
+									
+								</ul>
+							</div>
+						</div>
+						
+						<div class="space"></div>
+						<h2>专业研究领域</h2>
+						<div class="row">
+							<div class="col-md-12">
+								<strong>擅长</strong>
+									<ul class="list-unstyled">
+										<li><i class="fa fa-caret-right pr-10 text-colored"></i>成人足踝部引起疼痛、畸形、肿胀、僵硬的各类疾病（不含肿瘤和三个月内的骨折），包括拇外翻、拇僵症、跖痛症、平足、高弓足、马蹄足、跟腱炎、跟痛症、距骨坏死、踝关节关节炎及各种足踝部严重复杂畸形矫正；</li>
+										<li><i class="fa fa-caret-right pr-10 text-colored"></i>成人下肢畸形矫正：使用钢板内固定及泰勒六轴空间外固定架治疗下肢各类畸形，包括膝内翻（O形腿）、膝外翻（X形腿）、踝关节内外翻、下肢骨折畸形愈合、下肢不等长等</li>
+										
+									</ul>
+							</div>
+						</div>
+								
+						<div class="space"></div>
+						<h2>相关成果</h2>
+						<div class="row">
+							<div class="col-md-12">
+								<ul class="list-unstyled">
+										<li><i class="fa fa-caret-right pr-10 text-colored"></i>团队成员先后于工关节领域发表论文百余篇，其中20篇发表于J.B.J.S(Am), J.B.J.S(Br), C.O.R.R, JOA 等著名期刊。</li>
+										<li><i class="fa fa-caret-right pr-10 text-colored"></i>团队领衔人周一新主任同时也是A3人工膝关节系统，China Hip人工髋关节系统主要设计者之一</li>
+										<li><i class="fa fa-caret-right pr-10 text-colored"></i>团队成员郭盛接曾参与多部专著的编译工作，并参与卫生部组织的《人工髋膝关节置换术》卫生行业标准的编写工作（该标准已在卫生部官网上颁布实施）</li>
+								</ul>	
+						</div>	
+						</div>		
+								
+						<div class="space"></div>
+						<h2>团队成员</h2>
+						<div class="row">
+							<div class="col-md-12">
+								<ul class="list-unstyled">
+										<li><i class="fa fa-caret-right pr-10 text-colored"></i><strong style="font-size:18px"> 周一新</strong> <span>教授 主任医师 博士生导师</span></li>
+											<ul style="list-style-type:none">
+												<li>曾于英国剑桥大学髋膝关节外科中心研修髋、膝人工关节外科学</li>
+												<li>美国哈佛大学Brigham & Women’s医院， 麻省总医院进修人工关节外科学</li>
+												<li>现就职于北京积水潭医院矫形骨科</li>
+												<li>现任北京积水潭医院矫形骨科 科室主任</li>
+												<li>国际人工关节技术学会(ISTA)常务理事</li>
+												<li>国际骨与关节感染学会委员</li>
+												<li>SICOT骨与关节感染委员会创始委员</li>
+												<li>并担任 《中华骨科杂志》英文编辑，并被遴选为《中华医学杂志》英文版审稿人Journal of Arthroplasty 中文版副主编</li>
+											</ul>
+										
+										<li><i class="fa fa-caret-right pr-10 text-colored"></i><strong style="font-size:18px"> 杜辉</strong> <span> 副主任医师</span></li>
+											<ul style="list-style-type:none">
+												<li>现任积水潭医院矫形骨科 副主任医师</li>
+												<li>英国爱丁堡皇家外科学院院士（FRCSEd）</li>
+												<li>香港骨科医学院院士（FHKCOS）</li>
+												<li>曾于美国跟随美国足踝外科学会前主席Kieth Wapner研修足踝外科</li>
+												<li>曾于巴尔的摩专门学习计算机辅助泰勒六轴空间外固定架的使用</li>
+												
+											</ul>
+										
+										<li><i class="fa fa-caret-right pr-10 text-colored"></i><strong style="font-size:18px"> 邵宏翊</strong> <span>博士</span></li>
+										<li><i class="fa fa-caret-right pr-10 text-colored"></i><strong style="font-size:18px"> 顾建明 </strong> <span> 博士 FRC</span></li>
+										<li><i class="fa fa-caret-right pr-10 text-colored"></i><strong style="font-size:18px"> 杨德金 </strong> <span>博士</span></li>
+										<li><i class="fa fa-caret-right pr-10 text-colored"></i><strong style="font-size:18px"> 唐浩</strong> <span>博士</span></li>
+											<ul style="list-style-type:none">
+												<li>香港外科学会会员，香港骨科学会高级学员</li>
+												<li>在人工关节置换、成人下肢畸形矫正等方面有较深入研究</li>
+											</ul>
+								</ul>	
+						</div>	
+						</div>		
+						
+								
+								
+								
+							</div>
+						</div>
+					</div>
+					
+					
+					<div align="center">
+					
+					 <button type="button" class="btn btn-lg btn-info">立即预约</button>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+		<!-- section end -->
+
+
+		<!-- JavaScript files placed at the end of the document so the pages load faster
+		================================================== -->
+		<!-- Jquery and Bootstap core js files -->
+
+		<script type="text/javascript" src="plugins/jquery.min.js"></script>
+		<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+
+		<!-- Modernizr javascript -->
+		<script type="text/javascript" src="plugins/modernizr.js"></script>
+
+		<!-- Isotope javascript -->
+		<script type="text/javascript" src="plugins/isotope/isotope.pkgd.min.js"></script>
+		
+		<!-- Backstretch javascript -->
+		<script type="text/javascript" src="plugins/jquery.backstretch.min.js"></script>
+
+		<!-- Appear javascript -->
+		<script type="text/javascript" src="plugins/jquery.appear.js"></script>
+
+		<!-- Initialization of Plugins -->
+		<script type="text/javascript" src="js/template.js"></script>
+
+		<!-- Custom Scripts -->
+		<script type="text/javascript" src="js/custom.js"></script>
+		 
+		
+	</body>
+</html>

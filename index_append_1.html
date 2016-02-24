@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en">
+<!--<![endif]-->
+	<head>
+		<meta charset="utf-8">
+		<title>e寻名家</title>
+		<meta name="description" content="shareView">
+		<meta name="author" content="htmlcoder.me">
+
+		<!-- Mobile Meta -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+		<!-- Favicon -->
+		<link rel="shortcut icon" href="images/favicon.ico">
+
+		<!-- Web Fonts -->
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700,300&amp;subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Raleway:700,400,300' rel='stylesheet' type='text/css'>
+
+		<!-- Bootstrap core CSS -->
+		<link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+
+		<!-- Font Awesome CSS -->
+		<link href="fonts/font-awesome/css/font-awesome.css" rel="stylesheet">
+
+		<!-- Plugins -->
+		<link href="css/animations.css" rel="stylesheet">
+
+		<!-- shareView core CSS file -->
+		<link href="css/style.css" rel="stylesheet">
+
+		<!-- Custom css --> 
+		<link href="css/custom.css" rel="stylesheet">
+		
+		
+		
+		<script type="text/javascript">
+		window.onload = function(){
+		if(isWeiXin()){
+			//alert("hello");
+			}
+		}
+		function isWeiXin(){
+			var ua = window.navigator.userAgent.toLowerCase();
+			if(ua.match(/MicroMessenger/i) == 'micromessenger'){
+			return true;
+			}else{
+			return false;
+			}
+		}
+		</script>
+				
+		
+		<script type="text/javascript" src="plugins/jquery.min.js"></script>	
+		<script type="text/javascript">
+		$(document).ready(function(){
+		   
+			 
+		   		   
+			//检查设备 跳转链接开始   
+			$(".Image").click(function(){
+		//	  alert("hello");
+			  var browser = {
+			   versions: function () {
+				var u = navigator.userAgent, app = navigator.appVersion;
+				return {//移动终端浏览器版本信息
+				 trident: u.indexOf('Trident') > -1, //IE内核
+				 presto: u.indexOf('Presto') > -1, //opera内核
+				 webKit: u.indexOf('AppleWebKit') > -1, //苹果、谷歌内核
+				 gecko: u.indexOf('Gecko') > -1 && u.indexOf('KHTML') == -1, //火狐内核
+				 mobile: !!u.match(/AppleWebKit.*Mobile/i) || !!u.match(/MIDP|SymbianOS|NOKIA|SAMSUNG|LG|NEC|TCL|Alcatel|BIRD|DBTEL|Dopod|PHILIPS|HAIER|LENOVO|MOT-|Nokia|SonyEricsson|SIE-|Amoi|ZTE/), //是否为移动终端
+				 ios: !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/), //ios终端
+				 android: u.indexOf('Android') > -1 || u.indexOf('Linux') > -1, //android终端或者uc浏览器
+				 iPhone: u.indexOf('iPhone') > -1 || u.indexOf('Mac') > -1, //是否为iPhone或者QQHD浏览器
+				 iPad: u.indexOf('iPad') > -1, //是否iPad
+				 webApp: u.indexOf('Safari') == -1 //是否web应该程序，没有头部与底部
+				};
+			   } (),
+			   language: (navigator.browserLanguage || navigator.language).toLowerCase()
+			}
+			if (browser.versions.iPhone || browser.versions.iPad || browser.versions.ios) {
+						var ua = window.navigator.userAgent.toLowerCase();
+						if(ua.match(/MicroMessenger/i) == 'micromessenger'){	
+						var str="请点击右上方的'...'\n\r选择在Safari中打开";		
+						alert(str);
+							}else{
+						window.location.href = "https://itunes.apple.com/cn/app/e-xun-ming-jia/id1073506655?l=en&mt=8";						
+						}
+				}
+				else if (browser.versions.android) {
+			window.location.href = "http://www.wandoujia.com/apps/com.exmj.patients";
+				}
+				else if(browser.versions.trident||browser.versions.presto||browser.versions.webKit||browser.versions.gecko||browser.versions.mobile||browser.versions.webApp){
+			window.location.href = "http://www.wandoujia.com/apps/com.exmj.patients";
+				}
+				else{				
+			}
+			
+			
+			
+			
+			
+			
+						
+			  }); 
+			//链接结束
+			
+			  
+		 	   
+		});
+		</script>
+		
+		<style>
+		area:hover{		
+		z-index:100;
+		border-width:medium;}		
+		</style>
+		
+	</head>
+	
+	<body class="no-trans">
+
+		<div align="center"  >
+				<div >
+				
+				<img  src="images/shareImage1.jpg"   alt="" />
+				<img class="Image" src="images/shareImage2.jpg"   alt="" />
+				<img  src="images/shareImage3.jpg"   alt="" />
+				<img class="Image" src="images/shareImage4.jpg"   alt="" />
+				<img  src="images/shareImage5.jpg"   alt="" />
+				
+				
+				
+				<!--
+				<img id="Image" src="images/shareImage.jpg" border="0" usemap="#shareMap" alt="" />
+				<map name="sharemap" id="shareMap">
+				
+				
+				        <area    id="button1"
+						    shape="rect"						
+							coords="0,368,760,507"
+							style="border-bottom-color:#FFCC66"							
+							target ="_blank"
+							alt=""
+							 
+						/>
+						
+						<area   id="button2"
+						    shape="rect"						
+							coords="293,5341,773,5481"
+							style="background:#996600"							
+							target ="_blank"
+							alt="" 
+						/>
+						
+				</map>
+				
+				-->
+				<!-- Modal --><div class="col-sm-6 col-md-3 isotope-item">
+								<div class="modal fade" id="project-doctor-2" tabindex="-1" role="dialog" aria-labelledby="project-12-label" aria-hidden="true">
+									<div class="modal-dialog modal-lg">
+										<div class="modal-content">
+											<div class="modal-header">
+												<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+												<h4 class="modal-title" id="project-12-label">正确认知“滑膜炎”</h4>
+											</div>
+											<div class="modal-body">
+												<h3></h3>
+												<div class="row">
+													<div class="col-md-12">
+														<img class="col-md-6" src="images/image-doctor-2.jpg" alt="" style="float:right;margin-top:0;">
+															<div id="doctor_text_2">
+															</div>
+													</div>
+												</div>
+											</div>
+											<div class="modal-footer">
+											    <button type="button" class="btn btn-sm btn-default" id="button_doctor_2">Detail</button>
+												<button type="button" class="btn btn-sm btn-default" data-dismiss="modal">Close</button>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- Modal end -->
+								</div>
+				
+		  </div>
+		</div>
+
+
+		<!-- JavaScript files placed at the end of the document so the pages load faster
+		================================================== -->
+		<!-- Jquery and Bootstap core js files -->
+
+		<script type="text/javascript" src="plugins/jquery.min.js"></script>
+		<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+
+		<!-- Modernizr javascript -->
+		<script type="text/javascript" src="plugins/modernizr.js"></script>
+
+		<!-- Isotope javascript -->
+		<script type="text/javascript" src="plugins/isotope/isotope.pkgd.min.js"></script>
+		
+		<!-- Backstretch javascript -->
+		<script type="text/javascript" src="plugins/jquery.backstretch.min.js"></script>
+
+		<!-- Appear javascript -->
+		<script type="text/javascript" src="plugins/jquery.appear.js"></script>
+
+		<!-- Initialization of Plugins -->
+		<script type="text/javascript" src="js/template.js"></script>
+
+		<!-- Custom Scripts -->
+		<script type="text/javascript" src="js/custom.js"></script>
+		 
+		
+	</body>
+</html>

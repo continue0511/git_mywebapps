@@ -1,0 +1,1316 @@
+<!DOCTYPE html>
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en">
+<!--<![endif]-->
+	<head>
+		<meta charset="utf-8">
+		<title>e寻名家</title>
+		<meta name="description" content="e寻名家">
+		<meta name="author" content="htmlcoder.me">
+
+		<!-- Mobile Meta -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+		<!-- Favicon -->
+		<link rel="shortcut icon" href="images/favicon.ico">
+
+		<!-- Web Fonts -->
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700,300&amp;subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Raleway:700,400,300' rel='stylesheet' type='text/css'>
+
+		<!-- Bootstrap core CSS -->
+		<link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+
+		<!-- Font Awesome CSS -->
+		<link href="fonts/font-awesome/css/font-awesome.css" rel="stylesheet">
+
+		<!-- Plugins -->
+		<link href="css/animations.css" rel="stylesheet">
+
+		<!-- E寻名家 core CSS file -->
+		<link href="css/style.css" rel="stylesheet">
+
+		<!-- Custom css --> 
+		<link href="css/custom.css" rel="stylesheet">
+		
+		<script type="text/javascript">
+		  function myFunction(number){
+		  var url1= "doctor"+number;	 
+		  document.getElementById(url1).style.display="inline";   
+		}
+		
+		
+		<!--  窗口大小的变化而导致按钮坐标的变化 -->
+		 window.onresize = function(){ 
+		   var originSize  = document.getElementById('processImage');
+		   var processButton = document.getElementById('processButton');
+		   
+		   
+		   var tempx1 = originSize.width*0.83;
+		   var tempy1 = originSize.height*0.85;
+		   var tempx2 = originSize.width;
+		   var tempy2 = originSize.height;
+		   processButton.coords=tempx1+","+tempy1+","+tempx2+","+tempy2;
+		   } 
+				 
+        </script>
+		
+		
+	
+		<script type="text/javascript" src="plugins/jquery.min.js"></script>	
+		<script type="text/javascript">
+		$(document).ready(function(){
+		    <!-- 加载文本 -->  
+		    $("#doctor_text_1").load("txts/doctor_1.txt");
+	 		$("#doctor_text_2").load("txts/doctor_2.txt");
+			$("#doctor_text_3").load("txts/doctor_3.txt");
+			$("#doctor_text_4").load("txts/doctor_4.txt");
+			$("#protocol_detail").load("txts/protocol_word.txt");
+			
+			 <!-- 文本内容变化 --> 
+		   $("#button_doctor_1").click(function(){
+		      $("#doctor_toggle_1").toggle(1000);			
+		       });
+		   $("#button_doctor_2").click(function(){
+		      $("#doctor_toggle_2").toggle(1000);			
+		       });
+		   $("#button_doctor_3").click(function(){
+		      $("#doctor_toggle_3").toggle(1000);			
+		       });
+		   $("#button_doctor_4").click(function(){
+		      $("#doctor_toggle_4").toggle(1000);			
+		       });
+			   
+			//名家团队页面跳转
+			    
+			$("#doctor1").click(function(){
+			//alert( $("#doctor1 h3").html());
+		      location.href = "doctor1.html?"+ $("#doctor1 h2").text();			
+		       });   
+		    $("#doctor2").click(function(){
+		      location.href = "doctor1.html?"+ $("#doctor2 h2").text();	;			
+		       });   
+			$("#doctor3").click(function(){
+		      location.href = "doctor1.html?"+ $("#doctor3 h2").text();	;			
+		       });   
+			   
+			   
+			   
+			<!-- 初始化时按钮坐标的变化 -->   
+		   var originSize  = document.getElementById('processImage');
+		   var processButton = document.getElementById('processButton');
+		   
+		   
+		   var tempx1 = originSize.width*0.83;
+		   var tempy1 = originSize.height*0.85;
+		   var tempx2 = originSize.width;
+		   var tempy2 = originSize.height;
+		   processButton.coords=tempx1+","+tempy1+","+tempx2+","+tempy2;
+		   
+		   
+		   <!-- 就医流程中的按钮 --> 
+			   $("#appointment").click(function(){
+		     var browser = {
+			   versions: function () {
+				var u = navigator.userAgent, app = navigator.appVersion;
+				return {//移动终端浏览器版本信息
+				 trident: u.indexOf('Trident') > -1, //IE内核
+				 presto: u.indexOf('Presto') > -1, //opera内核
+				 webKit: u.indexOf('AppleWebKit') > -1, //苹果、谷歌内核
+				 gecko: u.indexOf('Gecko') > -1 && u.indexOf('KHTML') == -1, //火狐内核
+				 mobile: !!u.match(/AppleWebKit.*Mobile/i) || !!u.match(/MIDP|SymbianOS|NOKIA|SAMSUNG|LG|NEC|TCL|Alcatel|BIRD|DBTEL|Dopod|PHILIPS|HAIER|LENOVO|MOT-|Nokia|SonyEricsson|SIE-|Amoi|ZTE/), //是否为移动终端
+				 ios: !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/), //ios终端
+				 android: u.indexOf('Android') > -1 || u.indexOf('Linux') > -1, //android终端或者uc浏览器
+				 iPhone: u.indexOf('iPhone') > -1 || u.indexOf('Mac') > -1, //是否为iPhone或者QQHD浏览器
+				 iPad: u.indexOf('iPad') > -1, //是否iPad
+				 webApp: u.indexOf('Safari') == -1 //是否web应该程序，没有头部与底部
+				};
+			   } (),
+			   language: (navigator.browserLanguage || navigator.language).toLowerCase()
+			}
+			if (browser.versions.iPhone || browser.versions.iPad || browser.versions.ios) {
+			window.location.href = "https://itunes.apple.com/cn/app/e-xun-ming-jia/id1073506655?l=en&mt=8";
+			}
+			else if (browser.versions.android) {
+			window.location.href = "http://www.wandoujia.com/apps/com.exmj.patients";
+			}
+			else{
+			window.location.href = "http://www.wandoujia.com/apps/com.exmj.patients";
+			}	
+		       }); 
+			   
+		});
+		</script>
+		
+		
+
+		
+		
+	</head>
+
+	<body class="no-trans">
+		<!-- scrollToTop -->
+		<!-- ================ -->
+		<div class="scrollToTop"><i class="icon-up-open-big"></i></div>
+
+		<!-- header start -->
+		<!-- ================ --> 
+		<header class="header fixed clearfix navbar navbar-fixed-top " >
+		
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4">
+
+						<!-- header-left start -->
+						<!-- ================ -->
+						<div class="header-left clearfix">
+
+							<!-- logo -->
+							<div class="logo smooth-scroll">
+								<a href="#banner"><img id="logo" src="images/logo.png"  width=60 height=60 alt="E寻名家"></a>
+							</div>
+
+							<!-- name-and-slogan -->
+							<div class="site-name-and-slogan smooth-scroll">
+								<div class="site-name"><a href="#banner">寻名家</a> </div>
+								<div class="site-slogan">骨科疾病医疗服务平台</div>
+							</div>
+							
+
+						</div>
+						<!-- header-left end -->
+
+					</div>
+					
+
+					
+					
+					<div class="col-md-8">
+
+						<!-- header-right start -->
+						<!-- ================ -->
+						<div class="header-right clearfix">
+
+							<!-- main-navigation start -->
+							<!-- ================ -->
+							<div class="main-navigation animated">
+
+								<!-- navbar start -->
+								<!-- ================ -->
+								<nav class="navbar navbar-default" role="navigation">
+									<div class="container-fluid">
+
+										<!-- Toggle get grouped for better mobile display -->
+										<div class="navbar-header">
+											<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-1">
+												<span class="sr-only">Toggle navigation</span>
+												<span class="icon-bar"></span>
+												<span class="icon-bar"></span>
+												<span class="icon-bar"></span>
+											</button>
+										</div>
+
+										<!-- Collect the nav links, forms, and other content for toggling  <a href="#MedicalInformation">就诊须知  </a> 
+										onclick="window.open('http://www.baidu.com','','');return true" -->
+										<div class="collapse navbar-collapse scrollspy smooth-scroll" id="navbar-collapse-1">
+											<ul class="nav navbar-nav navbar-right">
+												<li class="active"><a href="#banner"></a></li>
+												<li><a href="#famousTeam">名家团队</a></li>
+												<li><a href="#famousDoctor" >名医专栏</a></li>
+												<li><a href="#MedicalInformation">就诊须知 </a><li>									
+												<li><a href="#aboutUs">关于我们</a></li>
+												<!-- 登录入口 -->
+												<li><a target="_blank" href="http://www.3dbk.net">登录入口</a><li>
+												<li><a  href="#downLoad">立即下载</a><li>
+												
+											</ul>
+										</div>
+
+									</div>
+								</nav>
+								<!-- navbar end -->
+
+							</div>
+							<!-- main-navigation end -->
+
+						</div>
+						<!-- header-right end -->
+
+					</div>
+				</div>
+			</div>
+		</header>
+		<!-- header end -->
+
+		<!-- banner start -->
+		<!-- ================     <a href="b.html"><input  type="button " style="background-color: transparent; border: 0;" name="test" value="下载“e寻名家”"/></a>			-->
+		<div id="banner" class="banner">
+			<div class="banner-image"></div>
+			<div class="banner-caption">
+				<div class="container-fluid">
+					<div class="row" style="background: rgba(255, 255, 255, 0.49);">
+						<div class="col-md-8 col-md-offset-2 object-non-visible" data-animation-effect="fadeIn">
+							<h1 class="text-center" style="font-family:'汉仪菱心体简'";><span>汇聚国内一线骨科名医团队</span></h1>							
+							<p class="lead col-md-offset-6 col-sm-offset-6 col-xs-offset-6" style="color:#333333" >-------为您提供全面的骨科疾病医疗服务</p>	
+						</div>											
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- banner end -->
+		
+
+		
+		
+		
+		<!-- 名医专栏 -->
+	<!-- section start -->
+		<!-- ================ -->
+		<div class="section">
+			<div class="container">
+				<h1 class="text-center title" id="famousTeam">名家团队</h1>
+				<div class="separator"></div>
+				<p class="lead text-center">e寻名家只给你最好的呵护</p>
+				<br>			
+				<div class="row object-non-visible" data-animation-effect="fadeIn">
+					<div class="col-md-12">
+
+						<!-- isotope filters start -->
+						<div class="filters text-center">
+							<ul class="nav nav-pills" >
+								<li class="active"><a href="#" data-filter=".doctor1">doctor1</a></li>
+								<li><a href="#" data-filter=".doctor2" onClick="myFunction(2)">doctor2</a></li>
+								<li><a href="#" data-filter=".doctor3" onClick="myFunction(3)">doctor3</a></li>
+					<!--			<li><a href="#" data-filter=".doctor4" onClick="myFunction(4)">doctor4</a></li>
+								<li><a href="#" data-filter=".doctor5" onClick="myFunction(5)">doctor5</a></li>  -->
+							</ul>
+						</div>
+						<!-- isotope filters end -->
+
+
+						<!-- portfolio items start -->
+						<div class="isotope-container row grid-space-1" >
+						
+						
+						
+							<div class="col-sm-12 col-md-12 isotope-item doctor1" id="doctor1" >
+							
+								<div class="modal-body" >
+									
+									<div class="row">
+										<div class="col-md-6">
+										<h2 align="center">关节翻修与重建--周一新名医团队</h2>
+											<h3>团队简介</h3>
+												<p>Our Mission. Vision. & Values</p>
+												<ul class="list-unstyled">
+													<li><i class="fa fa-caret-right pr-10 text-colored"></i><strong> 使命 Why we are here</br></strong><p style="text-indent:1em;">为成人关节疾病和下肢畸形患者提供：优质、安全、和高性价比的诊疗服务</p></li>
+													<li><i class="fa fa-caret-right pr-10 text-colored"></i><strong> 远景  Where we are headed</br></strong><p style="text-indent:1em;">致力于成人关节疾病诊疗及下肢畸形矫正领域的临床与实践、研究与创新、于此同时为病人提供深切的人文关怀，并在此领域内维持领导地位</p></li>
+													<li><i class="fa fa-caret-right pr-10 text-colored"></i><strong> 价值观  What you can expect</br></strong><p style="text-indent:1em;">尊重，诚信，职业素质，追求卓越，创新精神</p></li>
+													
+												</ul>
+											
+										</div>
+										<div class="col-md-6">
+											<img src="images/image-team-1.jpg" alt="" >
+										</div>
+									</div>
+									
+								</div>
+								
+								
+								<!-- Modal -->
+								
+								<!-- Modal end -->
+							</div>
+
+							
+
+							<div class="col-sm-12 col-md-12 isotope-item doctor2" style="display:none;" id="doctor2">
+								<div class="modal-body">
+									
+									<div class="row">
+										<div class="col-md-6">
+											<h2 align="center">关节翻修--周一新名医团队</h2>
+											<h3>团队简介</h3>
+												<p>Our Mission. Vision. & Values</p>
+												<ul class="list-unstyled">
+													<li><i class="fa fa-caret-right pr-10 text-colored"></i><strong> 使命 Why we are here</br></strong><p style="text-indent:1em;">为成人关节疾病和下肢畸形患者提供：优质、安全、和高性价比的诊疗服务</p></li>
+													<li><i class="fa fa-caret-right pr-10 text-colored"></i><strong> 远景  Where we are headed</br></strong><p style="text-indent:1em;">致力于成人关节疾病诊疗及下肢畸形矫正领域的临床与实践、研究与创新、于此同时为病人提供深切的人文关怀，并在此领域内维持领导地位</p></li>
+													<li><i class="fa fa-caret-right pr-10 text-colored"></i><strong> 价值观  What you can expect</br></strong><p style="text-indent:1em;">尊重，诚信，职业素质，追求卓越，创新精神</p></li>
+													
+												</ul>
+												</div>
+										<div class="col-md-6">
+											<img src="images/image-team-2.jpg" alt="">
+										</div>
+									</div>
+								</div>
+								
+								<!-- Modal -->
+								
+								<!-- Modal end -->
+							</div>
+							
+							
+							<div class="col-sm-12 col-md-12 isotope-item doctor3" style="display:none;" id="doctor3">
+								<div class="modal-body">
+									
+									<div class="row">
+										<div class="col-md-6">
+											<h2 align="center">畸形矫正--周一新名医团队</h2>
+											<h3>团队简介</h3>
+												<p>Our Mission. Vision. & Values</p>
+												<ul class="list-unstyled">
+													<li><i class="fa fa-caret-right pr-10 text-colored"></i><strong> 使命 Why we are here</br></strong><p style="text-indent:1em;">为成人关节疾病和下肢畸形患者提供：优质、安全、和高性价比的诊疗服务</p></li>
+													<li><i class="fa fa-caret-right pr-10 text-colored"></i><strong> 远景  Where we are headed</br></strong><p style="text-indent:1em;">致力于成人关节疾病诊疗及下肢畸形矫正领域的临床与实践、研究与创新、于此同时为病人提供深切的人文关怀，并在此领域内维持领导地位</p></li>
+													<li><i class="fa fa-caret-right pr-10 text-colored"></i><strong> 价值观  What you can expect</br></strong><p style="text-indent:1em;">尊重，诚信，职业素质，追求卓越，创新精神</p></li>
+													
+												</ul>
+												</div>
+										<div class="col-md-6">
+											<img src="images/image-team-3.jpg" alt="">
+										</div>
+									</div>
+								</div>
+								<!-- Modal -->
+								
+								<!-- Modal end -->
+							</div>
+							
+					        <div class="col-sm-12 col-md-12 isotope-item doctor4" style="display:none;" id="doctor4">
+								<div class="modal-body">
+									<h3>Project Description</h3>
+									<div class="row">
+										<div class="col-md-6">
+											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque sed, quidem quis praesentium, ut unde. Quae sed, incidunt laudantium nesciunt, optio corporis quod earum pariatur omnis illo saepe numquam suscipit, nemo placeat dignissimos eius mollitia et quas officia doloremque ipsum labore rem deserunt vero! Magnam totam delectus accusantium voluptas et, tempora quos atque, fugiat, obcaecati voluptatibus commodi illo voluptates dolore nemo quo soluta quis.</p>
+											<p>Molestiae sed enim laboriosam atque delectus voluptates rerum nostrum sapiente obcaecati molestias quasi optio exercitationem, voluptate quis consequatur libero incidunt, in, quod. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos nobis officiis, autem earum tenetur quidem. Quae non dicta earum. Ipsum autem eaque cum dolor placeat corporis quisquam dolorum at nesciunt.</p>
+										</div>
+										<div class="col-md-6">
+											<img src="images/portfolio-4.jpg" alt="">
+										</div>
+									</div>
+								</div>
+											
+											
+								<!-- Modal -->
+								
+								<!-- Modal end -->
+							</div>
+							
+							
+							<div class="col-sm-12 col-md-12 isotope-item doctor5" style="display:none;" id="doctor5">
+								<div class="modal-body">
+									<h3>Project Description</h3>
+									<div class="row">
+										<div class="col-md-6">
+											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque sed, quidem quis praesentium, ut unde. Quae sed, incidunt laudantium nesciunt, optio corporis quod earum pariatur omnis illo saepe numquam suscipit, nemo placeat dignissimos eius mollitia et quas officia doloremque ipsum labore rem deserunt vero! Magnam totam delectus accusantium voluptas et, tempora quos atque, fugiat, obcaecati voluptatibus commodi illo voluptates dolore nemo quo soluta quis.</p>
+											<p>Molestiae sed enim laboriosam atque delectus voluptates rerum nostrum sapiente obcaecati molestias quasi optio exercitationem, voluptate quis consequatur libero incidunt, in, quod. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos nobis officiis, autem earum tenetur quidem. Quae non dicta earum. Ipsum autem eaque cum dolor placeat corporis quisquam dolorum at nesciunt.</p>
+										</div>
+										<div class="col-md-6">
+											<img src="images/portfolio-5.jpg" alt="" >
+										</div>
+									</div>
+								</div>
+								
+							</div>
+							
+							
+							
+
+						</div>
+						<!-- portfolio items end -->
+					
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- section end -->	
+
+		
+		
+		
+		
+		
+		
+		<!-- section start -->
+		<!-- ================ -->
+		<div class="section">
+			<div class="container">
+				<h1 class="text-center title" id="famousDoctor">名医专栏</h1>
+				<div class="separator"></div>
+				<p class="lead text-center"></p>
+				<br>			
+				<div class="row object-non-visible" data-animation-effect="fadeIn">
+					<div class="col-md-12">
+
+
+
+						<!-- portfolio items start -->
+			<!--			<div class="isotope-container row grid-space-20"> -->
+							<div class="col-sm-6 col-md-3 isotope-item ">
+								<div class="image-box">
+									<div class="overlay-container">
+										<img src="images/image-doctor-1.jpg"   alt="">
+										<a class="overlay" data-toggle="modal" data-target="#project-doctor-1">
+											<i class="fa fa-search-plus"></i>
+											<span>成人关节置换术后感染的诊断与治疗进展</span>
+										</a>
+									</div>									
+									<a class="btn btn-default btn-block" style="" data-toggle="modal" data-target="#project-doctor-1" >骨科</a>								
+								</div>
+								<!-- Modal -->
+								<div class="modal fade" id="project-doctor-1" tabindex="-1" role="dialog" aria-labelledby="project-1-label" aria-hidden="true">
+									<div class="modal-dialog modal-lg">
+										<div class="modal-content">
+											<div class="modal-header">
+												<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+												<h4 class="modal-title" id="project-1-label">成人关节置换术后感染的诊断与治疗进展</h4>
+											</div>
+											<div class="modal-body">
+												<h3></h3>
+												<div class="row">
+													<div class="col-md-12">
+													<img class="col-md-6" src="images/image-doctor-1.jpg" alt="" style="float:right;margin-top:0;">
+													
+														<div id="doctor_text_1">
+														</div>
+													</div>
+												</div>
+												
+													
+											</div>
+											
+											<div class="modal-footer">
+											    <button type="button" class="btn btn-sm btn-default" id="button_doctor_1">Detail</button>
+												<button type="button" class="btn btn-sm btn-default" data-dismiss="modal">Close</button>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- Modal end -->
+							</div>
+
+							
+
+							<div class="col-sm-6 col-md-3 isotope-item  *">
+								<div class="image-box">
+									<div class="overlay-container">
+										<img src="images/image-doctor-2.jpg" alt="">
+										<a class="overlay" data-toggle="modal" data-target="#project-doctor-2">
+											<i class="fa fa-search-plus"></i>
+											<span>正确认知“滑膜炎”</span>
+										</a>
+									</div>
+									<a class="btn btn-default btn-block" data-toggle="modal" data-target="#project-doctor-2">正确认知“滑膜炎”</a>
+								</div>
+								<!-- Modal -->
+								<div class="modal fade" id="project-doctor-2" tabindex="-1" role="dialog" aria-labelledby="project-12-label" aria-hidden="true">
+									<div class="modal-dialog modal-lg">
+										<div class="modal-content">
+											<div class="modal-header">
+												<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+												<h4 class="modal-title" id="project-12-label">正确认知“滑膜炎”</h4>
+											</div>
+											<div class="modal-body">
+												<h3></h3>
+												<div class="row">
+													<div class="col-md-12">
+														<img class="col-md-6" src="images/image-doctor-2.jpg" alt="" style="float:right;margin-top:0;">
+															<div id="doctor_text_2">
+															</div>
+													</div>
+												</div>
+											</div>
+											<div class="modal-footer">
+											    <button type="button" class="btn btn-sm btn-default" id="button_doctor_2">Detail</button>
+												<button type="button" class="btn btn-sm btn-default" data-dismiss="modal">Close</button>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- Modal end -->
+							</div>
+							
+							
+							<div class="col-sm-6 col-md-3 isotope-item web-design">
+								<div class="image-box">
+									<div class="overlay-container">
+										<img src="images/image-doctor-3.jpg" alt="">
+										<a class="overlay" data-toggle="modal" data-target="#project-doctor-3">
+											<i class="fa fa-search-plus"></i>
+											<span>人工全膝关节置换术后早期护理及功能锻炼</span>
+										</a>
+									</div>
+									<a class="btn btn-default btn-block" data-toggle="modal" data-target="#project-doctor-3">人工全膝关节置换术后早期护理</a>
+								</div>
+								<!-- Modal -->
+								<div class="modal fade" id="project-doctor-3" tabindex="-1" role="dialog" aria-labelledby="project-1-label" aria-hidden="true">
+									<div class="modal-dialog modal-lg">
+										<div class="modal-content">
+											<div class="modal-header">
+												<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+												<h4 class="modal-title" id="project-1-label">人工全膝关节置换术后早期护理及功能锻炼</h4>
+											</div>
+											<div class="modal-body">
+												<h3></h3>
+												<div class="row">
+													<div class="col-md-12">
+													    <img class="col-md-6" src="images/image-doctor-3.jpg" alt="" style="float:right;margin-top:0;">
+														
+															<div id="doctor_text_3">
+															</div>															
+													</div>
+												</div>
+											</div>
+											<div class="modal-footer">
+											    <button type="button" class="btn btn-sm btn-default" id="button_doctor_3">Detail</button>
+												<button type="button" class="btn btn-sm btn-default" data-dismiss="modal">Close</button>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- Modal end -->
+							</div>
+							
+							<!-- Modal 4 -->
+
+							<div class="col-sm-6 col-md-3 isotope-item app-development">
+								<div class="image-box">
+									<div class="overlay-container">
+										<img src="images/image-doctor-4.jpg"   alt="">
+										<a class="overlay" data-toggle="modal" data-target="#project-doctor-4">
+											<i class="fa fa-search-plus"></i>
+											<span>大直径股骨球头对人工髋关节置换术后早期步态恢复的影响</span>
+										</a>
+									</div>
+									<a class="btn btn-default btn-block" data-toggle="modal" data-target="#project-doctor-4">大直径股骨球头</a>
+								</div>
+								<!-- Modal -->
+								<div class="modal fade" id="project-doctor-4" tabindex="-1" role="dialog" aria-labelledby="project-2-label" aria-hidden="true">
+									<div class="modal-dialog modal-lg">
+										<div class="modal-content">
+											<div class="modal-header">
+												<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+												<h4 class="modal-title" id="project-2-label">大直径股骨球头对人工髋关节置换术后早期步态恢复的影响</h4>
+											</div>
+											<div class="modal-body">
+												<h3>Influence of the femoral head size on early postoperative gait restoration after total hip arthroplasty</h3>
+												<div class="row">
+													<div class="col-md-12">
+													     <img class="col-md-6" src="images/image-doctor-4.jpg" alt="" style="float:right;margin-top:0;">
+														
+															<div id="doctor_text_4">
+															</div>
+															
+													
+														
+													</div>
+												</div>
+											</div>
+											<div class="modal-footer">
+											    <button type="button" class="btn btn-sm btn-default" id="button_doctor_4">Detail</button>
+												<button type="button" class="btn btn-sm btn-default" data-dismiss="modal">Close</button>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- Modal end -->
+							</div>
+							
+							<div class="col-sm-6 col-md-3 isotope-item web-design">
+								<div class="image-box">
+									<div class="overlay-container">
+										<img src="images/image-doctor-5.jpg" alt="">
+										<a class="overlay" data-toggle="modal" data-target="#project-doctor-5">
+											<i class="fa fa-search-plus"></i>
+											<span>Web Design</span>
+										</a>
+									</div>
+									<a class="btn btn-default btn-block" data-toggle="modal" data-target="#project-doctor-5">Project Title</a>
+								</div>
+								<!-- Modal -->
+								<div class="modal fade" id="project-doctor-5" tabindex="-1" role="dialog" aria-labelledby="project-3-label" aria-hidden="true">
+									<div class="modal-dialog modal-lg">
+										<div class="modal-content">
+											<div class="modal-header">
+												<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+												<h4 class="modal-title" id="project-3-label">Project Title</h4>
+											</div>
+											<div class="modal-body">
+												<h3>Project Description</h3>
+												<div class="row">
+													<div class="col-md-6">
+														<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque sed, quidem quis praesentium, ut unde. Quae sed, incidunt laudantium nesciunt, optio corporis quod earum pariatur omnis illo saepe numquam suscipit, nemo placeat dignissimos eius mollitia et quas officia doloremque ipsum labore rem deserunt vero! Magnam totam delectus accusantium voluptas et, tempora quos atque, fugiat, obcaecati voluptatibus commodi illo voluptates dolore nemo quo soluta quis.</p>
+														<p>Molestiae sed enim laboriosam atque delectus voluptates rerum nostrum sapiente obcaecati molestias quasi optio exercitationem, voluptate quis consequatur libero incidunt, in, quod. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos nobis officiis, autem earum tenetur quidem. Quae non dicta earum. Ipsum autem eaque cum dolor placeat corporis quisquam dolorum at nesciunt.</p>
+													</div>
+													<div class="col-md-6">
+														<img src="images/image-doctor-5.jpg" alt="">
+													</div>
+												</div>
+											</div>
+											<div class="modal-footer">
+												<button type="button" class="btn btn-sm btn-default" data-dismiss="modal">Close</button>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- Modal end -->
+							</div>
+							
+							<div class="col-sm-6 col-md-3 isotope-item site-building">
+								<div class="image-box">
+									<div class="overlay-container">
+										<img src="images/image-doctor-6.jpg" alt="">
+										<a class="overlay" data-toggle="modal" data-target="#project-doctor-6">
+											<i class="fa fa-search-plus"></i>
+											<span>Site Building</span>
+										</a>
+									</div>
+									<a class="btn btn-default btn-block" data-toggle="modal" data-target="#project-doctor-6">Project Title</a>
+								</div>
+								<!-- Modal -->
+								<div class="modal fade" id="project-doctor-6" tabindex="-1" role="dialog" aria-labelledby="project-4-label" aria-hidden="true">
+									<div class="modal-dialog modal-lg">
+										<div class="modal-content">
+											<div class="modal-header">
+												<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+												<h4 class="modal-title" id="project-4-label">Project Title</h4>
+											</div>
+											<div class="modal-body">
+												<h3>Project Description</h3>
+												<div class="row">
+													<div class="col-md-6">
+														<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque sed, quidem quis praesentium, ut unde. Quae sed, incidunt laudantium nesciunt, optio corporis quod earum pariatur omnis illo saepe numquam suscipit, nemo placeat dignissimos eius mollitia et quas officia doloremque ipsum labore rem deserunt vero! Magnam totam delectus accusantium voluptas et, tempora quos atque, fugiat, obcaecati voluptatibus commodi illo voluptates dolore nemo quo soluta quis.</p>
+														<p>Molestiae sed enim laboriosam atque delectus voluptates rerum nostrum sapiente obcaecati molestias quasi optio exercitationem, voluptate quis consequatur libero incidunt, in, quod. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos nobis officiis, autem earum tenetur quidem. Quae non dicta earum. Ipsum autem eaque cum dolor placeat corporis quisquam dolorum at nesciunt.</p>
+													</div>
+													<div class="col-md-6">
+														<img src="images/image-doctor-6.jpg" alt="">
+													</div>
+												</div>
+											</div>
+											<div class="modal-footer">
+												<button type="button" class="btn btn-sm btn-default" data-dismiss="modal">Close</button>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- Modal end -->
+							</div>
+							
+							<div class="col-sm-6 col-md-3 isotope-item app-development">
+								<div class="image-box">
+									<div class="overlay-container">
+										<img src="images/image-doctor-7.jpg" alt="">
+										<a class="overlay" data-toggle="modal" data-target="#project-doctor-7">
+											<i class="fa fa-search-plus"></i>
+											<span>App Development</span>
+										</a>
+									</div>
+									<a class="btn btn-default btn-block" data-toggle="modal" data-target="#project-doctor-7">Project Title</a>
+								</div>
+								<!-- Modal -->
+								<div class="modal fade" id="project-doctor-7" tabindex="-1" role="dialog" aria-labelledby="project-5-label" aria-hidden="true">
+									<div class="modal-dialog modal-lg">
+										<div class="modal-content">
+											<div class="modal-header">
+												<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+												<h4 class="modal-title" id="project-5-label">Project Title</h4>
+											</div>
+											<div class="modal-body">
+												<h3>Project Description</h3>
+												<div class="row">
+													<div class="col-md-6">
+														<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque sed, quidem quis praesentium, ut unde. Quae sed, incidunt laudantium nesciunt, optio corporis quod earum pariatur omnis illo saepe numquam suscipit, nemo placeat dignissimos eius mollitia et quas officia doloremque ipsum labore rem deserunt vero! Magnam totam delectus accusantium voluptas et, tempora quos atque, fugiat, obcaecati voluptatibus commodi illo voluptates dolore nemo quo soluta quis.</p>
+														<p>Molestiae sed enim laboriosam atque delectus voluptates rerum nostrum sapiente obcaecati molestias quasi optio exercitationem, voluptate quis consequatur libero incidunt, in, quod. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos nobis officiis, autem earum tenetur quidem. Quae non dicta earum. Ipsum autem eaque cum dolor placeat corporis quisquam dolorum at nesciunt.</p>
+													</div>
+													<div class="col-md-6">
+														<img src="images/image-doctor-7.jpg" alt="">
+													</div>
+												</div>
+											</div>
+											<div class="modal-footer">
+												<button type="button" class="btn btn-sm btn-default" data-dismiss="modal">Close</button>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- Modal end -->
+							</div>
+
+							
+							
+							<div class="col-sm-6 col-md-3 isotope-item  *">
+								<div class="image-box">
+									<div class="overlay-container">
+										<img src="images/image-doctor-8.jpg" alt="">
+										<a class="overlay" data-toggle="modal" data-target="#project-doctor-8">
+											<i class="fa fa-search-plus"></i>
+											<span>App Development</span>
+										</a>
+									</div>
+									<a class="btn btn-default btn-block" data-toggle="modal" data-target="#project-doctor-8">商务场景应用</a>
+								</div>
+								<!-- Modal -->
+								<div class="modal fade" id="project-doctor-8" tabindex="-1" role="dialog" aria-labelledby="project-12-label" aria-hidden="true">
+									<div class="modal-dialog modal-lg">
+										<div class="modal-content">
+											<div class="modal-header">
+												<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+												<h4 class="modal-title" id="project-12-label">Project Title</h4>
+											</div>
+											<div class="modal-body">
+												<h3>Project Description</h3>
+												<div class="row">
+													<div class="col-md-6">
+														<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque sed, quidem quis praesentium, ut unde. Quae sed, incidunt laudantium nesciunt, optio corporis quod earum pariatur omnis illo saepe numquam suscipit, nemo placeat dignissimos eius mollitia et quas officia doloremque ipsum labore rem deserunt vero! Magnam totam delectus accusantium voluptas et, tempora quos atque, fugiat, obcaecati voluptatibus commodi illo voluptates dolore nemo quo soluta quis.</p>
+														<p>Molestiae sed enim laboriosam atque delectus voluptates rerum nostrum sapiente obcaecati molestias quasi optio exercitationem, voluptate quis consequatur libero incidunt, in, quod. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos nobis officiis, autem earum tenetur quidem. Quae non dicta earum. Ipsum autem eaque cum dolor placeat corporis quisquam dolorum at nesciunt.</p>
+													</div>
+													<div class="col-md-6">
+														<img src="images/image-doctor-8.jpg" alt="">
+													</div>
+												</div>
+											</div>
+											<div class="modal-footer">
+												<button type="button" class="btn btn-sm btn-default" data-dismiss="modal">Close</button>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- Modal end -->
+							</div>
+							
+							
+							
+								
+
+							
+
+				  </div>
+						<!-- portfolio items end -->
+					
+			  </div>
+		  </div>
+	</div>
+	<!--	</div>  -->
+		<!-- section end -->
+		
+		
+	
+
+
+
+		
+		
+		
+		<!-- section start -->
+		<!-- ================ -->
+		<div class="section ">
+			<div class="container" >
+				<h1 id="MedicalInformation"  class="text-center title">就诊须知</h1>
+				<div class="separator"></div>
+				<p class="lead text-center">就诊需要知道的一些事情</p>
+				<br>			
+				<div class="row object-non-visible" data-animation-effect="fadeIn">
+					<div class="col-md-12">
+
+				<div class="container" >
+				<div class="col-md-12" >
+								<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+								
+									<div class="panel panel-default" >									
+										<div class="panel-heading" role="tab" id="headingOne">
+											<h4 class="panel-title" align="center">
+												<a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+													就医流程
+												</a>
+											</h4>
+										</div>
+										<div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+										
+										<div class="modal-body" >
+												
+												<div class="row" >
+													
+													<div class="col-md-12">
+														<img id="processImage" src="images/image-information-10.jpg" border="0" usemap="#planetmap" alt="" />
+														<map name="planetmap" id="planetmap">
+   													    <area   id="processButton";
+														        shape="rect"
+																coords="900,611,1080,719"
+																style="background:#996600"
+																href ="http://www.wandoujia.com/apps/com.exmj.patients"
+																target ="_blank"
+																alt="" 
+																/>
+														</map>
+														<div align="right">
+														 <button type="button" class="btn btn-lg btn-default" id="appointment">立即预约</button>
+														 </div>
+													</div>
+												</div>
+											</div>
+										
+											
+											
+											
+											
+											
+										</div>
+									</div>
+									
+									<div class="panel panel-default">
+										<div class="panel-heading" role="tab" id="headingTwo">
+											<h4 class="panel-title" align="center">
+												<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+													常见问题
+												</a>
+											</h4>
+										</div>
+										<div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+										
+										<div class="modal-body" >
+												<h3 align="center"></h3>
+												<div class="row">
+												     <div class="col-md-6" style="float:right;margin-top:0;">
+														<img src="images/commonQuestion.png" alt="">
+													</div>
+													<div class="col-md-12">
+														<p><strong>1.如何预约e寻名家服务平台上的名医？</strong></p>
+														<p style="text-indent:1em">请下载手机app"e寻名家"，注册后，便可预约医生团队进行咨询</p>
+														<p><strong>2.预约名医以后，我能得到哪些服务？</strong></p>
+														<p style="text-indent:1em">在线预约一线名医，随后名医团队将会根据您提供的资料为您的疾病提供一份诊疗建议，若您愿意，平台还可以为您提供该医生线下对接治疗服务</p>
+														<p><strong>3.如何寻找一位合适自己的医生？</strong></p>
+														<p style="text-indent:1em">如果您对自己的病情只有初步的了解，不知如何选择医生，您可以在应用首页点击【寻医指导】，我们的客服会为您做详细的介绍，便于您更好的选择医生。</p>
+														<p><strong>4.如何填写病情采集表？</strong></p>
+														<p style="text-indent:1em">为了能充分了解您的病情，提交订单前您需要填写一张病情采集表，填写若有疑问，您可以在填写页面的右上角点击？查看填写注意事项</p>
+														<p><strong>5.为什么提交订单后迟迟没有回复？</strong></p>
+														<p style="text-indent:1em">接收到咨询订单后，医生团队会首先查看您的病情采集表 ，若需要补充一些资料，医生则会标明后反馈给您。若下单后7天内，医生未做任何操作，平台将会介入，帮您转交订单，或者进行订单退订处理。</p>
+														<p><strong>6.【诊断中】的订单是指什么订单？</strong></p>
+														<p style="text-indent:1em">医生团队在查看您的病情采集表后，可能需要您补充一些资料，这时订单便会转至【诊断中】，您可以针对诊断中的订单向医生进行相关咨询。</p>
+														<p><strong>7.云病历中的【已传病历】和【归档病历】有何区别</strong></p>
+														<p style="text-indent:1em">【已传病历】是指将自己的病历上传至e寻名家，可自行更新，便于您就医时，医生根据此病历对您病情有个更好的了解。您在e寻名家下单咨询时，可直接导入该病历。【归档病历】指在e寻名家完成咨询的订单，有较为详细的医生反馈，便于今后的在线复诊，不可自行编辑。</p>
+														<p><strong>8.为何我的订单会被放弃？</strong></p>
+														<p style="text-indent:1em">被放弃的订单可能存在以下几种情况
+														<ol>
+														<li>选择的医生团队有误，该医生团队无法为您提供咨询</li>
+														<li>该医生团队因参加科研活动，培训等无法为您提供咨询</li>
+														</ol></p>
+														<p style="text-indent:1em">若遇到以上几种情况，平台会为介入，进行转交订单，或者进行订单退订处理。</p>
+														<p><strong>9.如何联系线下对接治疗？</strong></p>
+														<p style="text-indent:1em">咨询结束后，若您希望该医生能继续为您提供治疗，请在【已完成】订单中选择【申请线下治疗】，随后我们的客服会和您进行联系对接线下治疗事宜。</p>
+														<p><strong>10.订单退款说明</strong></p>
+														<p style="text-indent:1em"><ol>
+														<li>若因医生团队放弃您的订单，且您本身不接受订单转交，则进行全额退款</li>
+														<li>若预约的医生团队因参加科研活动，培训等无法为您提供咨询，且您本身不接受订单转交。则进行全额退款</li>
+														</ol></p>
+													</div>
+													
+												</div>
+											</div>
+											
+											
+											
+										</div>
+									</div>
+								</div>
+							</div>
+				</div>					
+
+
+
+					
+                        
+							
+							
+							
+								
+					
+			  </div>
+		  </div>
+	</div>
+		</div>
+		<!-- section end -->
+		<!-- section end -->
+
+		
+
+		<!-- section start -->
+		<!-- ================ -->
+		<div class="section translucent-bg bg-image-1 blue">
+			<div class="container object-non-visible" data-animation-effect="fadeIn">
+				<h1 id="downLoad"  class="text-center title" >立即下载</h1>
+				<div class="space"></div>
+				<div class="row">
+				   <div>			
+						<div class="col-md-3 col-sm-3 " >
+							<div class="row" align="center">									
+								 <img   src="images/download-1.png"   alt="">
+								 
+							 </div>
+						 </div>
+						 <div class="col-md-3 col-sm-3 ">
+							<div class="row" align="center">									
+								 <img   src="images/download-2.png"  alt="">
+								
+							 </div>
+						 </div>
+						 <div class="col-md-3 col-sm-3 ">
+							<div class="row" align="center">									
+								 <img   src="images/download-3.png"  alt="">
+							
+							 </div>
+						 </div>	
+						 <div class="col-md-3 col-sm-3 ">
+							<div class="row" align="center">									
+								 <img   src="images/download-4.png"  alt="">
+					
+							 </div>
+						 </div>	
+					 </div>
+				
+				
+				    
+
+				
+					<div>			
+						<div class="col-md-3 col-sm-3 " >
+							<div class="row" align="center">									
+								 <img   src="images/Android_doctor.png"  width="100" height="100" alt="">
+								 <p style="font-size:18px;font-weight:bold;" >安卓医生版</p>
+							 </div>
+						 </div>
+						 <div class="col-md-3 col-sm-3 ">
+							<div class="row" align="center">									
+								 <img   src="images/Android_patient.png" width="100" height="100" alt="">
+								 <p style="font-size:18px;font-weight:bold;">安卓客户版</p>
+							 </div>
+						 </div>
+						 <div class="col-md-3 col-sm-3 ">
+							<div class="row" align="center">									
+								 <img   src="images/iOS_doctor.png" width="100" height="100" alt="">
+								 <p style="font-size:18px;font-weight:bold;">苹果医生版</p>
+							 </div>
+						 </div>	
+						 
+						 <div class="col-md-3 col-sm-3">
+							<div class="row" align="center">									
+								 <img   src="images/iOS_patient.png" width="100" height="100" alt="">
+								 <p style="font-size:18px;font-weight:bold;">苹果客户版</p>
+							 </div>
+						 </div>	
+						 
+						
+						 
+					 </div>
+			   </div>
+			</div>
+		</div>
+		<!-- section end -->
+
+		
+
+
+
+		<!-- section start -->
+		<!-- ================ -->
+		<div class="section translucent-bg bg-image-2 pb-clear">
+			<div class="container object-non-visible" data-animation-effect="fadeIn">
+				<h1 id="aboutUs" class="title text-center">关于我们</h1>
+				<div class="space" align="center">
+				<h3>e寻名家 -- 由南京红方网络科技有限公司推出的为患者提供在线名医问诊，线下对接治疗的医疗服务平台
+</h3> </div>
+				<div class="row">
+					<div class="col-md-4">
+						<div class="media testimonial">
+							<div class="media-left">
+								<img src="images/testimonial-1.png" alt="">
+							</div>
+							<div class="media-body">
+								<h3 class="media-heading">一线名医在线坐诊</h3>
+								<blockquote>
+									<p>骨科多领域一线名医，面对疾病，我们希望您有选择的权力</p>
+									
+								</blockquote>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="media testimonial">
+							<div class="media-left">
+								<img src="images/testimonial-2.png" alt="">
+							</div>
+							<div class="media-body">
+								<h3 class="media-heading">连贯的医疗服务</h3>
+								<blockquote>
+									<p>线上疾病咨询，线下对症治疗，悉心客服全程服务</p>
+									
+								</blockquote>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="media testimonial">
+							<div class="media-left">
+								<img src="images/testimonial-3.png" alt="">
+							</div>
+							<div class="media-body">
+								<h3 class="media-heading">专业的采集量表</h3>
+								<blockquote>
+									<p>我们记录您的每一点身体信息，为可靠的咨询结果提供数据支撑</p>
+									
+								</blockquote>
+							</div>
+						</div>
+					</div>
+					
+				</div>
+				
+				<div class="space" align="center">
+					</div>
+			</div>
+			<!-- section start -->
+			<!-- ================
+			<div class="translucent-bg blue">
+				<div class="container">
+					<div class="list-horizontal">
+						<div class="row">
+							<div class="col-xs-2">
+								<div class="list-horizontal-item">
+									<img src="images/client-1.png" alt="client">
+								</div>
+							</div>
+							<div class="col-xs-2">
+								<div class="list-horizontal-item">
+									<img src="images/client-2.png" alt="client">
+								</div>
+							</div>
+							<div class="col-xs-2">
+								<div class="list-horizontal-item">
+									<img src="images/client-3.png" alt="client">
+								</div>
+							</div>
+							<div class="col-xs-2">
+								<div class="list-horizontal-item">
+									<img src="images/client-4.png" alt="client">
+								</div>
+							</div>
+							<div class="col-xs-2">
+								<div class="list-horizontal-item">
+									<img src="images/client-5.png" alt="client">
+								</div>
+							</div>
+							<div class="col-xs-2">
+								<div class="list-horizontal-item">
+									<img src="images/client-6.png" alt="client">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- section end -->
+		</div>
+		<!-- section end -->
+		
+		
+		
+		
+		
+
+		<!-- section start -->
+		<!-- ================ 
+		<div class="default-bg space">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-8 col-md-offset-2">
+						<h1 class="text-center">您是第302018个访问者</h1>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- section end -->
+		
+		
+		<!-- section start -->
+			<!-- ================ -->
+			<div class="footer section">
+				<div class="container">
+					<h1 class="title text-center" id="contact">联系我们</h1>
+					<div class="space"></div>
+					<div class="row">
+						<div class="col-sm-6">
+							<div class="footer-content">
+								<p class="large">南京市江宁区秣周东路12</p>
+								<ul class="list-icons">
+									<li><i class="fa fa-map-marker pr-10"></i> 邮政编码:211100</li>
+									<li><i class="fa fa-phone pr-10"></i> 025-86169449</li>
+									<li><i class="fa fa-fax pr-10"></i>  4000120291 </li>
+									<li><i class="fa fa-envelope-o pr-10"></i>service@hongf.com.cn</li>
+								</ul>
+								<ul class="social-links">
+									
+									<li class="twitter"><img   src="images/wechat.jpg" width="80" height="80" alt="">
+								 <p style="font-size:14px;font-weight:bold;text-align:center;">微信公众平台</p></li>
+									<li class="googleplus"> <img   src="images/weibo.jpg" width="80" height="80" alt="">
+								 <p style="font-size:14px;font-weight:bold;text-align:center;">微博二维码</p></li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-sm-6">
+							<div class="footer-content">
+								<form role="form" id="footer-form">
+									<div class="form-group has-feedback">
+										<label class="sr-only" for="name2">Name</label>
+										<input type="text" class="form-control" id="name2" placeholder="姓名" name="name2" required>
+										<i class="fa fa-user form-control-feedback"></i>
+									</div>
+									<div class="form-group has-feedback">
+										<label class="sr-only" for="email2">Email address</label>
+										<input type="email" class="form-control" id="email2" placeholder="输入电子邮件" name="email2" required>
+										<i class="fa fa-envelope form-control-feedback"></i>
+									</div>
+									<div class="form-group has-feedback">
+										<label class="sr-only" for="message2">Message</label>
+										<textarea class="form-control" rows="8" id="message2" placeholder="您要提交的消息" name="message2" required></textarea>
+										<i class="fa fa-pencil form-control-feedback"></i>
+									</div>
+									<input type="submit" value="提交" class="btn btn-default">
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+				<!-- section end -->
+
+			
+			
+							
+		<!-- Modal start -->
+			<div class="modal fade" id="detail" tabindex="-1" role="dialog" aria-labelledby="project-5-label" aria-hidden="true">
+				<div class="modal-dialog modal-lg">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+							<h4 class="modal-title" id="project-5-label" align="center">相关协议</h4>
+						</div>
+						<div class="modal-body">
+							<div class="row">
+								<div class="col-md-12" id="protocol_detail">
+									
+								</div>
+								
+							</div>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-sm btn-default" data-dismiss="modal">Close</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Modal end -->
+						
+		
+			
+			
+			
+			
+			
+			
+	<!-- section start -->			
+<footer id="footer">		
+<div class="header">
+	<div class="container">
+		<div class="header-main ">        		
+		<!-- main-navigation start -->
+	<!-- ================ -->
+	<div class="main-navigation animated">
+
+			<!-- navbar start -->
+			<!-- ================ -->
+			<nav class="navbar navbar-default" role="navigation">
+				<div class="container-fluid" align="center" >
+	<!-- Toggle get grouped for better mobile display -->
+					<div class="navbar-header" >
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-3">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>												
+						</button>
+					</div>
+					
+					
+				   <div class="navg collapse navbar-collapse scrollspy smooth-scroll"  id="navbar-collapse-3" >										
+					<ul class="res"  >
+						<li><a class="scroll" href="#aboutUs">关于我们</a></li>
+						<li><a href="#contact">联系我们</a></li>             
+						<li><a href="#outPlatform">对外平台</a></li>
+						<li><a href="#MedicalInformation">就诊须知</a></li>	
+						
+						<li><a  data-toggle="modal" data-target="#detail">相关协议</a></li>
+					</ul>									  
+				   </div>
+				   
+												   
+			   </div>
+		  </div>
+	  </div>
+		   
+		 
+	</div>
+  </div>
+	
+				
+
+</div>
+
+</footer>
+
+
+
+<div class="container">
+  <!-- <p class="text-center" style="color:#000000">Copyright © 2015 e寻名家.</p> -->
+   <p class="text-center" style="color:#000000">Copyright ©南京红方网络科技有限公司</p>
+   <p class="text-center" style="color:#000000">备案号：<a href="http://beian.pdxx.net/">苏ICP备15044054号-3</a></p>
+</div>
+	
+	
+
+
+
+
+
+
+		
+
+		<!-- JavaScript files placed at the end of the document so the pages load faster
+		================================================== -->
+		<!-- Jquery and Bootstap core js files -->
+
+		<script type="text/javascript" src="plugins/jquery.min.js"></script>
+		<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+
+		<!-- Modernizr javascript -->
+		<script type="text/javascript" src="plugins/modernizr.js"></script>
+
+		<!-- Isotope javascript -->
+		<script type="text/javascript" src="plugins/isotope/isotope.pkgd.min.js"></script>
+		
+		<!-- Backstretch javascript -->
+		<script type="text/javascript" src="plugins/jquery.backstretch.min.js"></script>
+
+		<!-- Appear javascript -->
+		<script type="text/javascript" src="plugins/jquery.appear.js"></script>
+
+		<!-- Initialization of Plugins -->
+		<script type="text/javascript" src="js/template.js"></script>
+
+		<!-- Custom Scripts -->
+		<script type="text/javascript" src="js/custom.js"></script>
+
+	</body>
+</html>
